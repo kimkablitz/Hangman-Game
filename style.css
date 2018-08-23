@@ -17,6 +17,9 @@
             max-width: 60%;
             background-color:black;
         }
+        .card-text{
+            font-family: 'Gloria Hallelujah';
+        }
         img{
             max-height: 50%;
         }
@@ -92,6 +95,7 @@
         #reset{
             margin-top:2%;
             margin-left:60%;
+            background-color: yellow;
         }
 
         

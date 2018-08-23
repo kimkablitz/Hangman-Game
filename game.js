@@ -91,9 +91,9 @@ check=function(){
 //Play
 play=function () {
     PlayList =[
-        ["everton", "liverpool", "swansea", "chelsea", "hull", "manchester-city", "newcastle-united"],
-        ["alien", "dirty-harry", "gladiator", "finding-nemo", "jaws"],
-        ["manchester", "milan", "madrid", "amsterdam", "prague"]
+        ["someonelikeyou", "chasingpavements", "hello", "rollinginthedeep", "whenwewereyoung", "setfiretotherain", "skyfall"],
+        ["sugar", "Shewillbeloved", "payphone", "onemorenight", "thislove"],
+        ["delicate", "shakeitoff", "lovestory", "blankspace", "badblood"]
     ];
 chosenPlayList = PlayList[Math.floor(Math.random() * PlayList.length)];
 word =chosenPlayList[Math.floor(Math.random() * chosenPlayList.length)];
