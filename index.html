@@ -8,53 +8,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <style>
-        body{
-            background-color:white;
-        }
-        h1{
-            text-align: center;
-        }
-        .container{
-            max-width: 50%;
-            background-color:black;
-        }
-        img{
-            max-height: 50%;
-        }
-        .card{
-            margin-top: 5%;
-        }
-        .col{
-            padding:5%;
-        }
-        .audio{
-            margin-bottom: 5%;
-        }
-        #my-word {
-            margin: 0;
-            display: block;
-            padding: 0;
-            display:block;
-            }
-
-        #my-word li {
-            position: relative;
-            list-style: none;
-            margin: 0;
-            display: inline-block;
-            padding: 0 10px;
-            font-size:1.6em;
-            }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Gloria+Hallelujah" rel="stylesheet">
+    
   </head>
   <body>
    <!--Jumbotron-->
-    <div class="jumbotron">
+    <div class="jumbotron bg-dark">
             <h1 class="display-4">The Hangman Game</h1>
             <p class="lead">Keep the man alive! Don't let him hang!</p>
             <hr class="my-8">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            
     </div>
     <!--Body container-->
     <div class="container">
@@ -63,34 +27,36 @@
                 <img class="card-img-top" src="https://ww2.kqed.org/wp-content/uploads/sites/12/2015/10/maroon5_wide-72ecc9e2ef11e6f4e8fa26275a57a9b66bcdbfa2.jpg" alt="Card image cap">
             <div class="card-body">
                     <h5 class="card-title">What is this song?</h5>
-                    <p class="card-text">Game Rules: Guess the first word of the song that is being played.</p> 
-                    You have <p id="p1">6 </p>lives
-        <p>Click here to play</p>
-
-        <div class="row audio">
+                    <p class="card-text">Game Rules: Use the alphabet below to choose a word</p> 
+    
+        <div id="buttons">
+            <ul id="alphabet">
+             
+            </ul>
+        </div>
+        </div>
+        <p id= "hint">Hint audio below</p>
+         <div class="row audio">
                 <audio controls>
                         <source src="./assets/images/She.m4a" type="audio/ogg">
                         <source src="./assets/images/She.m4a" type="audio/mpeg">
-                      Your browser does not support the audio element.
                       </audio>
-                      
         </div>
-        <input type="text" id="guessWord">
-        <br><br>
-        A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
         <div id="hold">
             <ul id="my-word">
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
-                <li class="guess">-</li>
+                
+
             </ul>
         </div>
+        
+
+       
+                     
+        <div id="hold">
+            <ul id="my-word">
+            </ul>
+        </div>
+        <p id="mylives">You have 6 lives</p>
     
         <table class="table table-bordered">
             <thead>
@@ -120,37 +86,10 @@
             </table>
         </div>
     </div>
-    </div>
-        <!--equal columns-->
-        <div class="container">
-            <div class="row">
-                    <div class="col">
-                            There are workarounds for older browser versions, but they shouldn’t be necessary if you’re up-to-date
-                    </div>
-                    <div class="col">
-                            There are workarounds for older browser versions, but they shouldn’t be necessary if you’re up-to-date
-                    </div>
-                    <div class="col">
-                            There are workarounds for older browser versions, but they shouldn’t be necessary if you’re up-to-date
-                    </div>
-            </div>
-        </div>
+    <button id ="reset">Play Again</button>
+</div>
+</div>
 
-       <!-- <div class="row">
-            <div class="col-md">
-                <p>Your Hints here</p> 
-                </div>
-                <div class="col-md">
-                <p>Your guess here</p>
-                </div>
-        </div>
-        second row
-        <div class="row">
-                <img src="https://www.fiftyflowers.com/site_files/FiftyFlowers/Image/Product/peony-sarah-bernhardt-bloom-500_bf626528.jpg" alt="">
-        </div>
-    </div
-      <!--Third Row-- 
-      -->
 
     <!-- Optional JavaScript -->
     <script src="game.js" type="text/javascript"></script>
