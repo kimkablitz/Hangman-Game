@@ -61,6 +61,7 @@ window.onload=function(){
             for (var i = 0; i < storedGueses.length; i++) {
               if (counter + space === storedGueses.length) {
                 showLives.innerHTML = "You Win!";
+                
               }
             }
           }
@@ -117,7 +118,6 @@ document.getElementById('reset').onclick = function(){
 }
 
 }
-
 
 
 

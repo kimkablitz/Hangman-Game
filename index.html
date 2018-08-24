@@ -31,15 +31,13 @@
     
         <div id="buttons">
             <ul id="alphabet">
-             
             </ul>
         </div>
         </div>
         <p id= "hint">Hint audio below</p>
          <div class="row audio">
                 <audio controls>
-                        <source src="./assets/images/She.m4a" type="audio/ogg">
-                        <source src="./assets/images/She.m4a" type="audio/mpeg">
+                        <source id="test1"src="./assets/images/She.m4a" type="audio/ogg">
                       </audio>
         </div>
         <div id="hold">
@@ -56,34 +54,10 @@
             <ul id="my-word">
             </ul>
         </div>
+        
         <p id="mylives">You have 6 lives</p>
     
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                <th scope="col">Guesses Remain</th>
-                <th scope="col">Letter Guessed</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <th scope="row">0</th>
-                <td><p id="LettersGuessed"></p></td>
-                </tr>
-            </tbody>
-            
-            <thead>
-                    <tr>
-                    <th scope="col">Wins</th>
-                    <th scope="col">Losses</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                    <th scope="row">0</th>
-                    <td>0</td>
-                    </tr>
-            </table>
+
         </div>
     </div>
     <button id ="reset">Play Again</button>

@@ -1,6 +1,7 @@
 
         body{
             background-color:white;
+            margin-bottom:20%;
         }
         h1{
             text-align: center;
@@ -32,7 +33,7 @@
         .audio{
             position: relative;
             margin-bottom: 5%;
-            margin-left:10%;
+            margin-left:20%;
         }
         #buttons{
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -69,6 +70,11 @@
                 color:$white;
                 }
             }
+        .clicked{
+            background-color: green;
+            text-align: center;
+        }
+        
 
         #my-word {
             margin: 0;
@@ -87,6 +93,7 @@
             }
 
         #mylives{
+            margin-top:5%;
             font-size:1.6em;
             text-align:center;
             display:block;
@@ -94,8 +101,9 @@
             }
         #reset{
             margin-top:2%;
-            margin-left:60%;
+            margin-left:85%;
             background-color: yellow;
+            margin-bottom:2%;
         }
 
         
